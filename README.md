@@ -1,18 +1,16 @@
-# Global Mindscape website preview
+# Global Mindscape website (redesign preview)
 
-This is a static, multi-page website built with HTML and CSS. It uses no paid libraries, build tools, databases, forms or third-party scripts.
+Branch: `website-redesign-preview`. The live site is on `main` and is not affected by this branch.
 
-## Pages
-- Home (`index.html`)
-- About (`about.html`)
-- Services (`services.html`)
-- Free Resources (`resources.html`)
-- Insights (`insights.html`)
-- Contact (`contact.html`)
+## Structure
+- `index.html` Home
+- `about.html` About
+- `services.html` Services
+- `resources.html` Free Resources
+- `insights.html` Insights
+- `contact.html` Contact
+- `assets/site.css` shared styles
+- `assets/logo-mark.svg` connected-node logo
+- `assets/favicon.svg` browser tab icon
 
-## Assets
-- `assets/site.css` shared responsive styling
-- `assets/logo.svg` supplied Global Mindscape logo
-- `assets/favicon.svg` simple brand favicon
-
-All client-only Audit tools are described as added-value items and are not presented as public downloads.
+Keep the `assets` folder beside the pages when opening them in a browser.

@@ -181,3 +181,22 @@ h3 { font-size: 1.4rem; }
   .pillars { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Articles */
+.article { max-width: 720px; }
+.article .meta, .card .meta { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--muted); }
+.article .meta a { color: var(--gold-ink); text-decoration: none; font-weight: 500; }
+.article .meta a:hover { text-decoration: underline; }
+.card .meta { margin-top: 14px; }
+.article-body { margin-top: 28px; max-width: none; color: var(--fg); font-size: 1.125rem; line-height: 1.75; }
+.article-body p + p, .article-body ul + p, .article-body ol + p, .article-body p + ul, .article-body p + ol { margin-top: 18px; }
+.article-body h2 { margin: 44px 0 16px; font-size: clamp(1.5rem, 3vw, 2rem); }
+.article-body a { color: var(--gold-ink); text-underline-offset: 3px; }
+.article-body .ticks { margin-top: 16px; }
+.steps { margin: 18px 0 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 18px; }
+.steps li { counter-increment: s; position: relative; padding-left: 52px; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: 0.1em; width: 34px; height: 34px; border-radius: 50%; background: var(--navy); color: var(--gold-soft); font-family: var(--font-mono); font-size: 0.85rem; display: grid; place-items: center; }
+.sources { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+.sources h3 { font-size: 1.1rem; font-family: var(--font-mono); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; color: var(--gold-ink); }
+.sources ol { margin: 14px 0 0; padding-left: 20px; display: grid; gap: 10px; }
+.sources a { color: var(--gold-ink); }
